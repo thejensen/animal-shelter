@@ -4,4 +4,8 @@ class Animal {
   public String mColor;
   public String mFavoriteTreat;
   public int mTimeInShelter;
+
+  public boolean youngPet(int maxAge) {
+    return ( mAge < maxAge );
+  }  
 }

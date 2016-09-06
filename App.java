@@ -4,33 +4,10 @@ public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
 
-    Animal skunk = new Animal();
-    skunk.mSpecies = "Skunk";
-    skunk.mAge = 2;
-    skunk.mColor = "Black and white";
-    skunk.mFavoriteTreat = "Strawberries";
-    skunk.mTimeInShelter = 2;
-
-    Animal giraffe = new Animal();
-    giraffe.mSpecies = "Giraffe";
-    giraffe.mAge = 13;
-    giraffe.mColor = "Brown and white";
-    giraffe.mFavoriteTreat = "Leaves";
-    giraffe.mTimeInShelter = 3;
-
-    Animal cat = new Animal();
-    cat.mSpecies = "Cat";
-    cat.mAge = 5;
-    cat.mColor = "Calico";
-    cat.mFavoriteTreat = "Human hearts";
-    cat.mTimeInShelter = 100;
-
-    Animal dog = new Animal();
-    dog.mSpecies = "Dog";
-    dog.mAge = 3;
-    dog.mColor = "Black";
-    dog.mFavoriteTreat = "Cats";
-    dog.mTimeInShelter = 6;
+    Animal skunk = new Animal("skunk", 2, "black and white", "strawberries", 2);
+    Animal giraffe = new Animal("Giraffe", 13, "Brown and white", "Leaves", 3);
+    Animal cat = new Animal("cat", 5, "calico", "human hearts", 100);
+    Animal dog = new Animal("dog", 3, "black", "cats", 6);
 
     Animal[] allAnimals = { skunk, giraffe, cat, dog };
 
@@ -47,5 +24,6 @@ public class App {
         System.out.println( "I've been in the shelter for " + individualAnimal.mTimeInShelter + " months" );
       }
     }
+    
   }
 }
